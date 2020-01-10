@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.tetrasoftbd.com/db/newline/users/registration.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2020 06:45:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, tetrasoftbd, Admin,tetrasoftadmin, tetrasoft,tetrasoftadmin">
+
+    <title>New User Registration</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+    	<script>
+function userAvailability() {
+$("#loaderIcon").show();
+jQuery.ajax({
+url: "check_availability.php",
+data:'email='+$("#email").val(),
+type: "POST",
+success:function(data){
+$("#user-availability-status1").html(data);
+$("#loaderIcon").hide();
+},
+error:function (){}
+});
+}
+</script>
+  </head>
+
+  <body>
+       <a class="btn btn-theme btn-block" href="../../../index-2.html">
+		                   Home Page
+		                </a>
+		                <br>
+		                <h3 Class="form-login-heading">Connection Charge 300tk.</h3>
+		                <h5 style="font-size:17px; color:white; text-align:center; ">A newline request will be sent after submitting this form</h5>
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" method="post">
+		          
+		        <h2 class="form-login-heading">Registration form</h2>
+		        <p style="padding-left: 1%; color: green">
+		        	
+
+		        </p>
+		        <div class="login-wrap">
+		         <input type="text" class="form-control" placeholder="Fast Name" name="fullname" required="required" autofocus>
+				 <br>
+				 <input type="text" class="form-control" placeholder="Last Name" name="lastname" required="required" autofocus>
+				 <br>
+				 <input type="text" class="form-control" maxlength="11" name="contactno" placeholder="Contact no" required="required" autofocus>
+		            <br>
+					<input type="text" class="form-control" maxlength="255" placeholder="Email Address" id="email" onBlur="userAvailability()" name="email" required="required">
+		             <span id="user-availability-status1" style="font-size:12px;"></span>
+		            <br>
+<h5>Select Area</h5>
+<select type="text" class="form-control" placeholder="Area" name="area" required="required" autofocus>
+				<option value="#">Select</option>
+                <option value="Limited">Limited</option>
+                  <option value="Society">Society</option>
+                  <option value="Chanmia Housing">Chanmia Housing</option>
+                  <option value="Tajmohol Road">Tajmohol Road</option>
+                  <option value="Nobodoy">Nobodoy</option>
+                  <option value="Shekhertek">Shekhertek</option>
+                  <option value="shikkhok polli">shikkhok polli</option>
+                  <option value="Shornokunja">Shornokunja</option>
+                 <option value="Mohammadi Homes">Mohammadi Homes</option>
+                 <option value="Niribiligate">Niribiligate</option>
+                </select> 
+
+<br>
+<h5>Select Road No</h5>
+<select type="text" class="form-control" placeholder="Road No" name="road" required="required" autofocus>
+<option placeholder="Road No">Select</option>
+                  <option value="Main Road">Main Road</option>
+                  <option value="Basbari Road">Basbari Road</option>
+                  <option value="1">1</option>
+                  <option value="1/A">1/A</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3/A">3/A</option>
+                  <option value="3/B">3/B</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="6/A">6/A</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="8/B">8/B</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  
+                  <option value="Block A -01">Block A -01</option>
+                  <option value="Block A -02">Block A -02</option>
+                  <option value="Block A -03">Block A -03</option>
+                  <option value="Block A -04">Block A -04</option>
+                  <option value="Block A -05">Block A -05</option>
+                  <option value="Block B -01">Block B -01</option>
+                  <option value="Block B -02">Block B -02</option>
+                  <option value="Block B -03">Block B -03</option>
+                  <option value="Block B -04">Block B -04</option>
+                  <option value="Block B -05">Block B -05</option>
+                  <option value="Block C -01">Block C -01</option>
+                  <option value="Block C -02">Block C -02</option>
+                  <option value="Block C -03">Block C -03</option>
+                  <option value="Block C -04">Block C -04</option>
+                  <option value="Block C -05">Block C -05</option>
+              
+                  
+                  
+                </select> 
+
+<br>
+				<input type="text" class="form-control" maxlength="255" name="house" placeholder="House No" required="required" autofocus>
+		            <br>
+					
+					<input type="text" class="form-control" maxlength="255" name="flat" placeholder="Flat No" required="required" autofocus>
+		            <br>
+					
+					<h5>Select Package</h5>
+		          <select type="text" class="form-control" placeholder="Select Package" name="package" required="required" autofocus>
+				  <option value="#">Select</option>
+                  <option value="01. Violet, 600 Tk.">01. Violet, 600 Tk.</option>
+                  <option value="02. Green, 700 Tk.">02. Green, 700 Tk.</option>
+                  <option value="03. Yellow, 800 Tk.">03. Yellow, 800 Tk.</option>
+                  <option value="04. Pink, 900 Tk.">04. Pink, 900 Tk.</option>
+                  <option value="05. Orange, 1000 Tk.">05. Orange, 1000 Tk.</option>
+                  <option value="06. Megenta, 1100 Tk.">06. Megenta, 1100 Tk.</option>
+                  <option value="07. Red, 1200 Tk.">07. Red, 1200 Tk.</option>
+                  <option value="08. Maroon, 1500 Tk.">08. Maroon, 1500 Tk.</option>
+                  <option value="09. Black, 2200 Tk.">09. Black, 2200 Tk.</option>
+                  <option value="10. Silver, 3500 Tk.">10. Silver, 3500 Tk.</option>
+                </select> 
+
+<br>
+		             
+		            
+		            <button class="btn btn-theme btn-block"   type="submit" name="submit" id="submit"><i class="fa fa-user"></i> Submit</button>
+		            <hr>
+		            
+		            <div class="registration">
+		                Go Back Home<br/>
+		                <a class="btn btn-theme" href="../../../index-2.html">
+		                   Home Page
+		                </a>
+		            </div>
+		
+		        </div>
+		
+		      
+		
+		      </form>	  	
+	  	
+	  	</div>
+	  </div>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("assets/img/login-bg.jpg", {speed: 500});
+    </script>
+
+
+  </body>
+
+<!-- Mirrored from www.tetrasoftbd.com/db/newline/users/registration.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2020 06:45:09 GMT -->
+</html>

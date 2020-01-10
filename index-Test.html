@@ -1,0 +1,815 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+       
+<style type="text/css">
+    <!--
+
+body {
+    margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+    background: #77b;
+}
+body, td {
+    font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    }
+
+#subTitle {
+    background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+    }
+
+#siteNavigation a, #siteNavigation .current {
+    font-weight: bold;  color: #448;
+    }
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+
+
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
+
+#pageContent {
+    clear: both;
+    border-bottom: 6px solid #000;
+    padding: 10px;  padding-top: 20px;
+    line-height: 1.65em;
+    background-image: url(backblue.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    }
+
+#pageContent, #siteNavigation {
+    background-color: #ccd;
+    }
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
+
+        <title>Ati Bazaar Online (ISP)</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="U-turn Broadband (ISP)">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+       <link rel="shortcut icon" type="image/png" href="AtiBazarOnlineLogo.png"/>
+        <link rel="icon" type="image/png" href="AtiBazarOnlineLogo.png"/>
+        <link href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+        <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/plugins/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet">
+        <link href="assets/plugins/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/plugins/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+        <link href="assets/plugins/photoswipe/dist/photoswipe.css" rel="stylesheet">
+        <link href="assets/plugins/photoswipe/dist/default-skin/default-skin.css" rel="stylesheet">
+        <link href="assets/plugins/calentim-daterangepicker/build/css/calentim.min.css" rel="stylesheet">
+        <link href="assets/plugins/preloaderDK/preloaderDK.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <style>
+            .link_margin{
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+            a:link {
+                text-decoration: none;
+            }
+            .rotate180 {
+                -webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+            body {
+  font-family: Arial, Helvetica,sans-serif;
+  background: url('images/3.jpg') no-repeat;
+  background-size: cover;
+  color: white;
+
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul li{
+	float: left;
+	width: 150px;
+	height: 40px;
+	background-color: #2CE6E6;
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+ul li a:hover{
+	background-color: green;
+}
+ul li ul li {
+	display: none;
+}
+ul li:hover ul li{
+	display: block;
+}
+
+
+
+
+
+        </style>
+
+    </head>
+    <body>
+	
+	
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="center" id="myImg" src="AtiBazarOnlineLogo.jpg" alt="পরশ" >
+        <p style="color:black">
+            <font size="5" >
+        Wellcome to Ati Bazar Online <br>
+        Be smart on the Internet.
+
+    </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	
+        <div class="super_container"style="background-color: rgb(44,230,230);">
+
+            <!-- Header -->
+	
+          
+			 <marquee  style="background-color:transparent; width="3660" height="30" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+            	<font size="3" color="white">
+                <a style="background-color:transparent;  href="#" title="Help Desk">প্রতি মাসের 10 তারিখের মধ্যে উক্ত মাসের বিল পরিশোধ করার জন্য বিশেষ ভাবে অনুরোধ করা হচ্ছে, অন্যথায় কোন প্রকার পূর্ব নোটিশ ছাড়াই সংযোগটি বিচ্ছিন্ন হয়ে যাবে কারণ এখন স্বয়ংক্রিয় বিলিং সফ্টওয়্যার এর মাধ্যমে বিলিং প্রক্রিয়া পরিচালনা করা হয়। ধন্যবাদ
+				</a>
+                Support: <a  style="background-color:transparent; href="#" title="Help Desk">
+                    +01979988818, +0191499966
+                </a>
+                Management: <a style="background-color:transparent;" href="#" title="Help Desk">
+                    +01979988818
+                </a>
+            </font>
+            </marquee>
+ 
+ 
+       
+
+            <!-- Home -->
+            <div class="home">
+               <div class="hero_slide">
+                            <div class="hero_slide_background" style="background-image:url(images/2.jpg)"></div>
+          <div class="row">
+                                    
+          <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="http://123.123.123.123/synapse/">Movie</a>
+            <ul>
+                <li><a href="http://123.123.123.123/synapse/" target="_blank">Synapse</a></li>
+                <li><a href="#">VDOMELA</a></li>
+                <li><a href="#">KISSANIME</a></li>
+                <li><a href="#">Natural BD</a></li>
+                <li><a href="#">Mojar FTP</a></li>
+                <li><a href="#">TalMuri FTP</a></li>
+                <li><a href="#">KochuPata</a></li>
+                <li><a href="#">Ati Bazar</a></li>
+                <li><a href="#">Bangla Movie</a></li>
+                <li><a href="#">English Movie</a></li>
+                <li><a href="#">Hindi Movie</a></li>
+            </ul>
+        </li>
+        <li><a href="https://crazyhd.com/">Torrent</a>
+              <ul>
+                <li><a href="https://crazyhd.com/">Crazy HD</a></li>
+                <li><a href="https://torrentbd.com/">Torrent Bd</a></li>
+                <li><a href="https://crazyhd.com/">Tejpata</a></li>
+                <li><a href="#">Dhaka Torrent</a></li>
+                <li><a href="#">Tarchira</a></li>
+                <li><a href="#">1377x</a></li>
+            </ul>
+
+        </li>
+          <li><a href="http://123.123.123.123/synapse/software/">Software</a></li>
+        <li><a href="package.html">Package</a></li>
+        <li><a href="http://10.16.100.244/livetv.php">Live Tv</a></li>
+        <li><a href="aboutus.html">Our Team</a></li>
+        <li><a href="aboutus.html">Contact</a></li>
+      
+    </ul>
+       
+<ul>
+ <div class="icon-bar1">
+  <a href="https://www.facebook.com/atibazaronline/" class="facebook1" target="_blank"><i class="fa fa-facebook"></i></a> 
+  <a href="https://www.twitter.com/rjporosh" class="twitter1"><i class="fa fa-twitter"  target="_blank"></i></a> 
+  <a href="#" class="google1"><i class="fa fa-google"  target="_blank"></i></a> 
+  <a href="#" class="linkedin1"><i class="fa fa-linkedin" target="_blank"></i></a>
+  <a href="https://www.youtube.com/rjporosh?sub_confirmation=1" class="youtube1"><i class="fa fa-youtube" target="_blank"></i></a> 
+</div> 
+</ul>
+</div>
+            <main>
+
+
+               <div class="slider multipost">
+                    <div class="owl-carousel owl-theme" id="post-slider-multipost">
+                                                <a onclick="UpdateHits('18765','visit')" href="player1889.html?play=18765">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/the_grudge.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>The Grudge</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18767','visit')" href="player9737.html?play=18767">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/messiah_season_01__2020__completed.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Messiah Season 01 (2020) Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18787','visit')" href="player167c.html?play=18787">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/shimla_mirchi.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Shimla Mirchi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18722','visit')" href="playera070.html?play=18722">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/ghost_stories.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Ghost Stories</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18688','visit')" href="playeraf9b.html?play=18688">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/new_year__2020__party_mix.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>New Year (2020) Party Mix</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18689','visit')" href="playerb18a.html?play=18689">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/hindi_english_mashup__2020__hit_mix.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Hindi English Mashup (2020) Hit Mix</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18752','visit')" href="player4e29.html?play=18752">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/line_of_descent.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Line of Descent</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('17806','visit')" href="playera06b.html?play=17806">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/panther__2019_.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Panther (2019)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('17816','visit')" href="player4ca8.html?play=17816">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/ujda_chaman.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Ujda Chaman</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('17618','visit')" href="player2a8e.html?play=17618">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/maleficent__mistress_of_evil.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Maleficent: Mistress of Evil</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18720','visit')" href="player9b15.html?play=18720">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/fire_cloud_evil_god_shura_mask.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Fire Cloud Evil God Shura Mask</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18716','visit')" href="playera735.html?play=18716">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/atiye_the_gift_season_01__2019__completed__hindi_and_english_.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Atiye The Gift Season 01 (2019) Completed (Hindi and English)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18800','visit')" href="playerce0e.html?play=18800">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/the_gentlemen.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>The Gentlemen</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('17351','visit')" href="player41de.html?play=17351">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/abominable.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Abominable</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18643','visit')" href="playerd20d.html?play=18643">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/good_newwz.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Good Newwz</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18754','visit')" href="playercfe0.html?play=18754">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/happi.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Happi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18792','visit')" href="player1e67.html?play=18792">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/1917.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>1917</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18590','visit')" href="player0efe.html?play=18590">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/ip_man_4.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>ip Man 4</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18638','visit')" href="player6e0d.html?play=18638">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/little_women.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Little Women</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                <a onclick="UpdateHits('18647','visit')" href="playerd926.html?play=18647">
+                            <div class="item">
+                                <div class="image">
+                                    <div class="img" style="background-image: url('files/spies_in_disguise.jpg');"></div>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>Spies in Disguise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                                                
+                    </div>
+                </div>
+                
+                
+            </main>
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="pswp__bg"></div>
+                <div class="pswp__scroll-wrap">
+                    <div class="pswp__container">
+                        <div class="pswp__item">
+                        </div>
+                        <div class="pswp__item">
+                        </div>
+                        <div class="pswp__item">
+                        </div>
+                    </div>
+                    <div class="pswp__ui pswp__ui--hidden">
+                        <div class="pswp__top-bar">
+                            <div class="pswp__counter">
+                            </div>
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)">
+                            </button>
+                            <button class="pswp__button pswp__button--share" title="Share">
+                            </button>
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen">
+                            </button>
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out">
+                            </button>
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip">
+                            </div>
+                        </div>
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+        <div class="overlay-bg"></div>
+        <script src="assets/plugins/preloaderDK/preloaderDK.js" type="text/javascript"></script>
+        <script src="assets/plugins/initLoader.js" type="text/javascript"></script>
+        <script src="assets/plugins/consoleFix.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/placeholder.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/modernizr.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery.mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/owl.carousel/dist/owl.carousel.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/owlcarousel2-thumbs/dist/owl.carousel2.thumbs.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/bootstrap-validator/dist/validator.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/photoswipe/dist/photoswipe.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/photoswipe/dist/photoswipe-ui-default.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/isotope/isotope.pkgd.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/isotope/isotope.layoutModules.js" type="text/javascript"></script>
+        <script src="assets/plugins/jquery.touchSwipe.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/moment/min/moment.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/calentim-daterangepicker/build/js/calentim.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/appear.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/semantic-ui-sticky/sticky.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/baron/baron.min.js" type="text/javascript"></script>
+        <script src="assets/plugins/wow.min.js" type="text/javascript"></script>
+        <script src="js/app3f56.js?v=11" type="text/javascript"></script>
+        
+<script type="text/javascript">
+        var EW_IS_MOBILE = false, $ad;
+        
+        $(document).ready(function() {
+            var maxWidth = 0;
+            $('.dropdown-menu').each(function(i){
+                if(!EW_IS_MOBILE)
+                $(this).width($(this).width()+50);
+            });
+          });
+        function showtv() {
+            var $ = jQuery;
+            var $d = $("#dtv");
+            $d.toggle();
+        }
+        
+        function AdBox() {
+            var $ = jQuery;
+            var $dlg = $("#myad");
+            $dlg.modal("show");
+        }
+        
+        // Strip JavaScript in HTML loaded by Ajax
+        function ew_StripScript(html) {
+            var ar, re = /<script([^>]*)>([\s\S]*?)<\/script\s*>/ig;
+            var str = html;
+            while ((ar = re.exec(html)) != null) {
+                var text = RegExp.lastMatch;
+                if (/(\s+type\s*=\s*['"]*(text|application)\/(java|ecma)script['"]*)|^((?!\s+type\s*=).)*$/i.test(RegExp.$1))
+                    str = str.replace(text, "");
+            }
+            return str;
+        }
+        function AdvancedSearch() {
+            var $ = jQuery;
+            var $dlg = $("#adSearch");
+            
+            // submit
+            var _submit = function() {
+                var form = $dlg.find(".modal-body form")[0];
+                var frm = ewForms[form.id];
+                frm.UpdateTextArea();
+                if (frm.Validate()) {
+                    frm.DestroyEditor();
+                    form.submit();              
+                }
+                return false;
+            }
+            
+            $dlg.on("hidden.bs.modal", function(data){
+                var frm = $dlg.find(".modal-body form").data("form");
+                if (frm) frm.DestroyEditor();
+                $dlg.find(".modal-body").html("");
+                $dlg.find(".modal-footer .btn-submit").unbind();
+            });
+            $dlg.find(".modal-footer .btn-submit").click(_submit).focus();
+            $.get("advancedsrch.php?modal=1", function(data){
+                $dlg.find(".modal-body").append($(data));            
+            });
+            
+            $dlg.modal("show");    
+        }  
+             
+        function UpdateHits(id, type, show = false) {
+            var $ = jQuery;
+            $.post("command.php", {id: id, type: type},
+            function(data,status){
+                if ($.trim(data) && show == true){
+                    var $dlg = $("#ewDialog");
+                    $dlg.html(data);
+                    $dlg.modal("show");
+                    $dlg.on('hidden.bs.modal', function (e) {
+                        $("#player").attr("src","");
+                    })
+                }
+            });
+        }
+        
+        function AddRequest(group, name) {
+            if (group && name.trim()) {
+                var $ = jQuery;
+                $.post("command.php", {group: group, name: name, request: 'request'},
+                function(data,status){
+                    if (!$.trim(data))
+                        $("#request").collapse('hide');
+                        $("#x_name").val("");
+                });
+            } else {
+                alert("Type Request Name!");
+            }
+        }
+        
+        function expand($elem){
+            var $ = jQuery;
+            var angle = 0;
+            var t = setInterval(function () {
+                if(angle == 1440){
+                    clearInterval(t);
+                    return;
+                }
+                angle += 40;
+                $('.link',$elem).stop().animate({rotate: '+=-40deg'}, 0);
+            },10);
+            $elem.stop().animate({width:'180px'}, 800)
+            .find('.item_content').fadeIn(400,function(){
+                $(this).find('p').stop(true,true).fadeIn(600);
+            });
+        }
+        function collapse($elem){
+            var $ = jQuery;
+            var angle = 1440;
+            var t = setInterval(function () {
+                if(angle == 0){
+                    clearInterval(t);
+                    return;
+                }
+                angle -= 40;
+                $('.link',$elem).stop().animate({rotate: '+=40deg'}, 0);
+            },10);
+            $elem.stop().animate({width:'52px'}, 800)
+            .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
+        }
+               
+$(function() {
+    var timer = null, interval = 3000;
+
+function tStart() {
+      if (timer !== null) return;
+      timer = setInterval(function () {
+        $(".owl-next").click();
+      }, interval); 
+}
+
+function tStop() {
+      clearInterval(timer);
+      timer = null
+}
+
+tStart();
+
+    $("#psearch").focus(function(){
+        tStop();
+    }).focusout(function(){
+        tStart();
+    });
+
+    $(".dropdown-toggle").on('click', function () {
+            tStop();
+            setTimeout(tStart, 60000);
+    });
+
+});
+
+        
+        
+        
+        /*(function($) {
+            $(document).ready(function() {
+               var akas=true;
+                $("#content-slider").lightSlider({
+                    loop:true,
+                    item:6,
+                    speed:500,
+                    auto:true,
+                    pager:false,
+                    pauseOnHover:true,
+                    keyPress:true
+                });
+                $('.item').hover(
+                    function(){
+                        var $this = $(this);
+                        expand($this);
+                    },
+                    function(){
+                        var $this = $(this);
+                        collapse($this);
+                    }
+                );
+            });                        
+        })(jQuery);*/
+        autocomplete(document.getElementById("psearch"));
+    </script>
+<div id="myad" class="modal">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="center" id="myImg" src="AtiBazarOnlineLogo.jpg" alt="পরশ" >
+        <p style="color:black">
+            <font size="5" >
+        Wellcome to Ati Bazar Online <br>
+        Be smart on the Internet.
+
+    </p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    
+  </div>
+</div>                
+<div id="ewDialog" class="modal fade" tabindex="-1" role="dialog"></div>
+<div id="adSearch" class="modal">    
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <form class="form-inline ewForm" method="post" action="#">
+                <input type="hidden" name="token" value="Ug5R9onYfqUYCDqp5WsSHw..">
+                <input type="hidden" name="ads" value="post">
+            <div class="modal-header">
+                <h3 class="modal-title" style="font-weight: bolder; color: #000000;" >Advanced Search</h3>
+            </div>
+            <div class="modal-body">                          
+            
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-submit ewButton">Search</button>
+                <button type="button" class="btn ewButton" data-dismiss="modal" aria-hidden="true">Cancel</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+    </body>
+
+<!-- Mirrored from 10.16.100.244/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Jan 2020 05:40:31 GMT -->
+</html>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        AdBox();
+    });
+    </script>
+
+
+
